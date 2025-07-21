@@ -1,0 +1,25 @@
+my-comment-section/
+├── public/
+│   ├── index.html
+│   └── ... (other public assets)
+├── src/
+│   ├── components/
+│   │   ├── CommentInputForm/
+│   │   │   └── CommentInputForm.jsx
+│   │   │   └── CommentInputForm.module.css (or .css/.scss)
+│   │   ├── CommentItem/
+│   │   │   └── CommentItem.jsx
+│   │   │   └── CommentItem.module.css
+│   │   ├── CommentList/
+│   │   │   └── CommentList.jsx
+│   │   │   └── CommentList.module.css
+│   │   └── index.js (Optional: for easier component imports)
+│   ├── App.jsx
+│   ├── index.js
+│   ├── index.css
+│   └── utils/ (Optional: for helper functions)
+│       └── commentUtils.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md

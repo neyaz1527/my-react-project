@@ -1,9 +1,9 @@
 //import List from './LearningList.jsx'
-import CommentSection from "./CommentSection.jsx";
+import MyComponent from "./MyComponent.jsx";
 function App() {
    return(
     <>
-        <CommentSection/>
+        <MyComponent/>
     </>
    );
 }
