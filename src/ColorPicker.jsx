@@ -19,5 +19,5 @@ function ColorPicker() {
             
     </div> );
 }
-
+//this is to test th applicaion
 export default ColorPicker;
