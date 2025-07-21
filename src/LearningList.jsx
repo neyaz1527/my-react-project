@@ -19,6 +19,9 @@ function List() {
       <button className="counterButton" onClick={increment}>increment</button>
       <button className="counterButton" onClick={decrement}>decrement</button>
       <button className="counterButton" onClick={reset}>reset</button>
+      <button className="counterButton" onClick={increment}>increment</button>
+      <button className="counterButton" onClick={decrement}>decrement</button>
+      <button className="counterButton" onClick={reset}>reset</button>
     </div>
   );
 }
