@@ -22,7 +22,6 @@ function MyComponent() {
             <input type="number" value={car.year} onChange={handleYearChange}></input><br/>
             <input type="text" value={car.maker} onChange={handleMakerchange}></input><br/>
             <input type="text" value={car.Model} onChange={handleModelChange}></input>
-             <input type="text" value={car.Model} onChange={handleModelChange}></input>
         </div>
     );
 }
