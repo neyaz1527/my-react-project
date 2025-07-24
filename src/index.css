@@ -1,3 +1,198 @@
-body{
-  background-color: grey;
+/* General Body and Container Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top, not center vertically */
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px; /* Add some padding around the content */
+  box-sizing: border-box;
+}
+
+.to-do-list {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limit the max width for better readability */
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Input and Add Button Container */
+.to-do-list > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px; /* Space between input and button */
+}
+
+/* Input Field */
+input[type="text"] {
+  flex-grow: 1; /* Allow input to take available space */
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons General Styling */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap; /* Prevent text wrapping on buttons */
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Specific Button Styles */
+.add-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.move-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.move-button:hover {
+  background-color: #e0a800;
+}
+
+.down-button { /* Reusing move-button styles as they are similar for up/down */
+  background-color: #17a2b8;
+  color: white;
+}
+
+.down-button:hover {
+  background-color: #138496;
+}
+
+/* Pin Button (using emoji, so styling might be minimal) */
+button:last-of-type { /* Targets the pin button specifically */
+  background: none;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+  font-size: 1.2em;
+  padding: 8px 12px;
+}
+
+button:last-of-type:hover {
+  background-color: #e2e6ea;
+  color: #333;
+}
+
+
+/* Task List */
+ol {
+  list-style: none; /* Remove default numbering */
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  flex-grow: 1; /* Task text takes available space */
+  font-size: 1.1em;
+  color: #444;
+  word-break: break-word; /* Break long words */
+  margin-right: 15px; /* Space between text and buttons */
+}
+
+/* Spacing between buttons within a list item */
+li button {
+  margin-left: 8px; /* Space between buttons */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .to-do-list {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .to-do-list > div {
+    flex-direction: column; /* Stack input and button on small screens */
+    gap: 15px;
+  }
+
+  li {
+    flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */
+    justify-content: center; /* Center items when wrapped */
+    padding: 10px;
+  }
+
+  .text {
+    width: 100%; /* Full width for text on small screens */
+    margin-bottom: 10px; /* Space below text when wrapped */
+    text-align: center;
+  }
+
+  li button {
+    margin: 5px; /* Adjust button margins for wrapped layout */
+  }
 }
