@@ -1,15 +1,4 @@
-body{
-    background-image: url(src/assets/001.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-}
-
-.clock{
-  color: black;
-  font-size: 6rem;
-  font-family: monospace;
-  text-align: center;
+.box{
+  border: 3px solid;
+  padding: 25px;
 }
