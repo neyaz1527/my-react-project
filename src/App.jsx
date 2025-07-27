@@ -1,15 +1,10 @@
-// import ColorPicker from "./ColorPicker.jsx";
-
-//import MyComponent from "./MyComponent.jsx"
-import ToDoList from "./ToDoList.jsx";
+import DigitalClock from "./DigitalClock.jsx";
 function App() {
    return(
     <>
-        <ToDoList/>   
+        <DigitalClock/>    
     </>
    );
 }
 
 export default App;
-
-//this is the comment
