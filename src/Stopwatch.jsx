@@ -11,7 +11,7 @@ function Stopwatch() {
         if(isRunning){
             intervalIdRef.current = setInterval(() => {
                 setElapsedTime(Date.now() - startTimeRef.current)
-            }, 10);
+            }, 11);
         }
 
         return() => {

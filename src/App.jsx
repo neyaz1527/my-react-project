@@ -1,10 +1,12 @@
-import Stopwatch from "./Stopwatch.jsx";
+import CommentSection from "./CommentSection.jsx";
+
+//import ToDoList from "./ToDoList.jsx";
 
 
 function App() {
    return(
     <>
-        <Stopwatch/>    
+        <CommentSection/>    
     </>
    );
 }
