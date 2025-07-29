@@ -1,10 +1,10 @@
-import Stopwatch from "./Stopwatch.jsx";
+import ToDoList from "./ToDoList.jsx";
 
 
 function App() {
    return(
     <>
-        <Stopwatch/>    
+        <ToDoList/>    
     </>
    );
 }
