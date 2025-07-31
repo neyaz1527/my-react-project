@@ -1,14 +1,11 @@
-//import Aswinilearn from "./LearnUseRef.jsx";
-//import ExpensiveCalculationComponent from "./ExpensiveCalculationComponents.jsx"
-import MyComponents from "./MyComponents.jsx";
-//import ToDoList from "./ToDoList.jsx";
-
+import './App.css'
+import GithubUsers from "./Effects/GithubUsers.jsx";
 
 function App() {
    return(
-    <>
-        <MyComponents/>  
-    </>
+    <div  className="container">
+        <GithubUsers/>  
+    </div>
    );
 }
 
