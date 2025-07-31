@@ -1,29 +1,21 @@
-import React, {useState,useEffect} from "react";
+import React, {useRef,useState} from "react";
 
 function MyComponents() {
 
-    const [count, setCount] = useState(0);
+   const emailRef = useRef()
+   const passwordRef = useRef()
 
-    useEffect(() =>{
-        console.log(count);
-    }, [count]);
-
-    function changeValue(amount){
-        setCount(currentCount => {
-            return currentCount + amount;
-        })
-        setCount(currentCount => {
-            return currentCount + amount;
-        })
-        //console.log(count)
+    function onSubmit(e){
+        e.preventDefault()
+        console.log({email: emailRef.current.value, password: passwordRef.current.value})
     }
 
     return (
-        <div>
-            <button onClick={() => {changeValue(-1)} }>--</button>
-            <span>{count}</span>
-            <button onClick={() => {changeValue(+1)} }>++</button>
-        </div>
+        <form onSubmit={onSubmit}>
+            <input ref={emailRef} type="email"></input><br/>
+            <input ref={passwordRef} type="password"></input><br/>
+            <button type="submit">submit</button>
+        </form>
     );
 }
 
