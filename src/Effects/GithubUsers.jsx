@@ -23,7 +23,7 @@ function GithubUsers() {
   }, []);
 
   if(loading){
-    return <p>Loading....</p>
+    return <p>This is loading....</p>
   }
   if(!loading){
   return (
